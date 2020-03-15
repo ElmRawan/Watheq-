@@ -1,0 +1,30 @@
+<div class="card my-5">
+        <div class="card-body">
+          <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+              <tr>
+                
+                <th scope="col">Company name</th>
+                <th scope="col">Company CR</th>
+                <th scope="col">CR start date</th>
+                <th scope="col">CR expiry date</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Address</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let company of companies">
+                
+                <td>{{ company.com_name }}</td>
+                <td>{{ company.com_cr }}</td>
+                <td>{{ company.s_date }}</td>
+                <td>{{ company.e_date }}</td>
+                <td><a href="mailto:{{ company.u_email }}">{{ company.u_email }}</a></td>
+                <td>{{ company.u_phone }}</td>
+                <td>{{ company.u_address }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>

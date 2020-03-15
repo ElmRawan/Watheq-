@@ -1,0 +1,105 @@
+<div class="card my-5">
+        <div class="card-body">
+          <form (ngSubmit)="onSubmit()" #companyForm="ngForm">
+    
+              
+            <div class="form-group">
+              <label for="name">Company name</label>
+              <input type="text" [(ngModel)]="company.com_name" 
+                class="form-control"
+                id="com_name"
+                name="com_name"
+                placeholder="Enter company name"
+                required #name="ngModel">
+                <div [hidden]="!name.pristine" class="alert alert-danger">Company name is required</div>
+            </div>
+            
+
+            <div class="form-group">
+                    <label for="id">Company CR (Commercial registration)</label>
+                    <input type="text" [(ngModel)]="company.com_cr" 
+                      class="form-control"
+                      id="com_cr"
+                      name="com_cr"
+                      placeholder="Enter company CR"
+                      required #id="ngModel">
+                      <div [hidden]="!id.pristine" class="alert alert-danger">Company CR is required</div>
+                  </div>
+    
+            <div class="form-group">
+                    <label for="date">CR start date</label>
+                   <input type="date" [(ngModel)]="company.s_date" 
+                      class="form-control"
+                      id="s_date"
+                      name="s_date"
+                      placeholder="Enter CR start date"
+                      required #email="ngModel">
+                      <div [hidden]="!email.pristine" class="alert alert-danger">CR start date is required</div>
+                </div>
+
+
+            <div class="form-group">
+                    <label for="date">CR expiry date</label>
+                   <input type="date" [(ngModel)]="company.e_date" 
+                      class="form-control"
+                      id="expiry"
+                      name="expiry"
+                      placeholder="Enter CR expire date"
+                      required #email="ngModel">
+                      <div [hidden]="!email.pristine" class="alert alert-danger">CR expiry date is required</div>
+                </div>
+
+
+            <div class="form-group">
+                        <label for="email">Company email</label>
+                        <input type="email" [(ngModel)]="company.u_email" 
+                          class="form-control"
+                          id="u_email"
+                          name="u_email"
+                          placeholder="Enter company email address"
+                          required #email="ngModel">
+                        <div [hidden]="!email.pristine" class="alert alert-danger">Company email is required</div>
+                      </div>
+
+
+
+            <div class="form-group">
+              <label for="name">Phone Number</label>
+              <input type="text" [(ngModel)]="company.u_phone" 
+                class="form-control"
+                id="u_phone"
+                name="u_phone"
+                placeholder="Enter Phone number"
+                required #name="ngModel">
+                <div [hidden]="!name.pristine" class="alert alert-danger">Phone number is required</div>
+            </div>
+            
+    
+    
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" [(ngModel)]="company.u_password" 
+                  class="form-control"
+                  id="u_password"
+                  name="u_password"
+                  placeholder="Enter password"
+                  required #password="ngModel">
+                <div [hidden]="!password.pristine" class="alert alert-danger">Password is required</div>
+              </div>
+    
+    
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" [(ngModel)]="company.u_address" 
+                  class="form-control"
+                  id="u_address"
+                  name="u_address"
+                  placeholder="Enter address">
+              </div>
+    
+              
+            <button type="submit" [disabled]="!companyForm.form.valid" 
+              class="btn btn-info">Submit</button>
+          </form>
+        </div>
+      </div>
