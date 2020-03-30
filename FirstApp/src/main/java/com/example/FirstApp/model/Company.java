@@ -60,5 +60,4 @@ public class Company extends WatheQ_User implements Serializable  {
 
 
 
-
 }
