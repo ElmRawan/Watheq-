@@ -1,7 +1,7 @@
 package com.example.FirstApp.model;
 
 import java.io.Serializable;
-import java.sql.Timestamp;
+import java.util.Date;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -54,10 +54,10 @@ public class Experience implements Serializable {
 
 	@Column(name = "s_date",nullable = false)
 	@NotNull(message = "Experince start date cannot be empty")
-	private Timestamp s_date;
+	private Date s_date;
 
 	@Column(name = "e_date")
-	private Timestamp e_date;
+	private Date e_date;
 
 	@Column(name = "exp_addby",nullable = false)
 	private String exp_addby;
@@ -75,7 +75,7 @@ public class Experience implements Serializable {
 
 	@Builder
 	public Experience(String exp_id, Individual i_id, Company com_cr, Education edu_id, String exp_position,
-			String com_name, Timestamp s_date, Timestamp e_date, String exp_addby, String ref_name,
+			String com_name, Date s_date, Date e_date, String exp_addby, String ref_name,
 			String ref_email) {
 		super();
 		this.exp_id = exp_id;
