@@ -1,8 +1,7 @@
 package com.example.FirstApp.model;
 
 import java.io.Serializable;
-import java.sql.Timestamp;
-
+import java.util.Date;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -62,7 +61,7 @@ public class Certificate implements Serializable {
 	//Date of graduation
 	@Column(name = "cert_date",nullable = false)
 	@NotNull(message = "Graduation date cannot be empty")
-	private Timestamp cert_date;
+	private Date cert_date;
 
 	//User who added the certificate
 	@Column(name = "cert_addby",nullable = false)
@@ -95,7 +94,7 @@ public class Certificate implements Serializable {
 
 	@Builder
 	public Certificate( Individual i_id, Education edu_id, String cert_id, String cert_degree, String uni_name,
-		Timestamp cert_date, String cert_addby, String cert_major, double cert_gpa, String cert_attach) {
+		Date cert_date, String cert_addby, String cert_major, double cert_gpa, String cert_attach) {
 	super();
 	this.i_id = i_id;
 	this.edu_id = edu_id;
