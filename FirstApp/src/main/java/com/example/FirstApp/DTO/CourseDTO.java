@@ -1,7 +1,6 @@
 package com.example.FirstApp.DTO;
 
-import java.sql.Timestamp;
-
+import java.util.Date;
 
 import com.example.FirstApp.model.Company;
 import com.example.FirstApp.model.Education;
@@ -25,9 +24,9 @@ public class CourseDTO {
 
 	private String course_name;
 
-	private Timestamp s_date;
+	private Date s_date;
 
-	private Timestamp e_date;
+	private Date e_date;
 
 	private String  course_addby;
 
@@ -45,7 +44,7 @@ public class CourseDTO {
 	
 
 	public CourseDTO(String course_id, Individual i_id, Company com_cr, Education edu_id, String course_name,
-			Timestamp s_date, Timestamp e_date, String course_addby, String course_institute_name,
+			Date s_date, Date e_date, String course_addby, String course_institute_name,
 			String course_attch) {
 		super();
 		this.course_id = course_id;
