@@ -1,10 +1,7 @@
 package com.example.FirstApp.DTO;
 
-import java.sql.Timestamp;
-
-
+import java.util.Date;
 import com.example.FirstApp.model.Individual;
-
 import lombok.Getter;
 import lombok.Setter;
 
@@ -28,7 +25,7 @@ public class LanguageDTO {
 	private String lang_cert_type;
 
 
-	private Timestamp language_date;
+	private Date language_date;
 
 
 	private String language_institute_name;
