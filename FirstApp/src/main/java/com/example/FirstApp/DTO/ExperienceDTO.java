@@ -12,7 +12,7 @@ import lombok.Setter;
 @Setter
 public class ExperienceDTO {
 	
-	 private Individual i_id;
+     private Individual i_id;
   
      private Company com_cr;
 	  
@@ -47,7 +47,7 @@ public class ExperienceDTO {
 
 
 	public ExperienceDTO(Individual i_id, Company com_cr, Education edu_id, long exp_id, String exp_position,
-			String com_name, Timestamp s_date, Timestamp e_date, String exp_addby, String ref_name, String ref_email) {
+			String com_name, Date s_date, Date e_date, String exp_addby, String ref_name, String ref_email) {
 		super();
 		this.i_id = i_id;
 		this.com_cr = com_cr;
