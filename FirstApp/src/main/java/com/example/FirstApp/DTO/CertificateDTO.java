@@ -38,7 +38,7 @@ public class CertificateDTO {
 			super();
 		}
 		
-		
+	
 
 		public CertificateDTO(Individual i_id, Education edu_id, String cert_id, String cert_degree, String uni_name,
 				Date cert_date, String cert_addby, String cert_major, double cert_gpa, String cert_attach) {
