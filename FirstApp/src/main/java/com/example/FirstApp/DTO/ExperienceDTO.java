@@ -1,6 +1,5 @@
 package com.example.FirstApp.DTO;
-
-import java.sql.Timestamp;
+import java.util.Date;
 import com.example.FirstApp.model.Company;
 import com.example.FirstApp.model.Education;
 import com.example.FirstApp.model.Individual;
@@ -25,9 +24,9 @@ public class ExperienceDTO {
 
      private String com_name;
 
-     private Timestamp s_date;
+     private Date s_date;
 
-     private Timestamp e_date;
+     private Date e_date;
 
      private String exp_addby;
 
