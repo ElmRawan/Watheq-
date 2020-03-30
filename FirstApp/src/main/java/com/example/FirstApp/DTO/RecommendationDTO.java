@@ -1,6 +1,6 @@
 package com.example.FirstApp.DTO;
 
-import java.sql.Timestamp;
+import java.util.Date;
 import com.example.FirstApp.model.Company;
 import com.example.FirstApp.model.Education;
 import com.example.FirstApp.model.Individual;
@@ -23,7 +23,7 @@ public class RecommendationDTO {
 
 	private String reco_from;
 
-	private Timestamp reco_date;
+	private Date reco_date;
 
 	private String reco_addby;
 
@@ -44,7 +44,7 @@ public class RecommendationDTO {
 	
 
 	public RecommendationDTO(long reco_id, Individual i_id, Company com_cr, Education edu_id, String reco_from,
-			Timestamp reco_date, String reco_addby, String reco_attach, String reco_institute_name) {
+			Date reco_date, String reco_addby, String reco_attach, String reco_institute_name) {
 		super();
 		this.reco_id = reco_id;
 		this.i_id = i_id;
