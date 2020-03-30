@@ -16,7 +16,6 @@ public class CompanyDTO extends WatheQ_UserDTO {
 	private Date s_date;
 
 	private Date e_date;
-
 	
 	
 
