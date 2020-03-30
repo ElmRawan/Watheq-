@@ -1,6 +1,5 @@
 package com.example.FirstApp.DTO;
 
-
 import java.util.Date;
 import lombok.Getter;
 import lombok.Setter;
