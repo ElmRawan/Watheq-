@@ -44,7 +44,7 @@ public class LanguageDTO {
 
 
 	public LanguageDTO(Individual i_id, String language_id, String language_name, String lang_cert_type,
-			Timestamp language_date, String language_institute_name, String language_attach) {
+			Date language_date, String language_institute_name, String language_attach) {
 		super();
 		this.i_id = i_id;
 		this.language_id = language_id;
