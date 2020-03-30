@@ -1,7 +1,6 @@
 package com.example.FirstApp.DTO;
 
-import java.sql.Timestamp;
-
+import java.util.Date;
 import com.example.FirstApp.model.Education;
 import com.example.FirstApp.model.Individual;
 
@@ -21,7 +20,7 @@ public class CertificateDTO {
 
 		private String uni_name;
 
-		private Timestamp cert_date;
+		private Date cert_date;
 
 		private String cert_addby;
 
@@ -42,7 +41,7 @@ public class CertificateDTO {
 		
 
 		public CertificateDTO(Individual i_id, Education edu_id, String cert_id, String cert_degree, String uni_name,
-				Timestamp cert_date, String cert_addby, String cert_major, double cert_gpa, String cert_attach) {
+				Date cert_date, String cert_addby, String cert_major, double cert_gpa, String cert_attach) {
 			this.i_id = i_id;
 			this.edu_id = edu_id;
 			this.cert_id = cert_id;
