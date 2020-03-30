@@ -1,8 +1,7 @@
 package com.example.FirstApp.model;
 
 import java.io.Serializable;
-import java.sql.Timestamp;
-
+import java.util.Date;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -51,7 +50,7 @@ public class Language implements Serializable  {
 	//
 	@Column(name = "language_date",nullable = false)
 	@NotNull(message = "Language start date cannot be empty")
-	private Timestamp language_date;
+	private Date language_date;
 
 	//           @Column(name = "duration_valid")
 	//           private String duration_valid;
@@ -68,7 +67,7 @@ public class Language implements Serializable  {
 	}
 	@Builder
 	public Language(Individual i_id, String language_id, String language_name, String lang_cert_type,
-			Timestamp language_date, String language_institute_name, String language_attach) {
+			Date language_date, String language_institute_name, String language_attach) {
 		super();
 		this.i_id = i_id;
 		this.language_id = language_id;
