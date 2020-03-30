@@ -1,8 +1,7 @@
 package com.example.FirstApp.model;
 
 import java.io.Serializable;
-import java.sql.Timestamp;
-
+import java.util.Date;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -49,10 +48,10 @@ public class Course implements Serializable {
 
 	@Column(name = "s_date",nullable = false)
 	@NotNull(message = "Course start date cannot be empty")
-	private Timestamp s_date;
+	private Date s_date;
 
 	@Column(name = "e_date")
-	private Timestamp e_date;
+	private Date e_date;
 
 	@Column(name = "course_addby",nullable = false)
 	private String  course_addby;
@@ -73,7 +72,7 @@ public class Course implements Serializable {
 
 	@Builder
 	public Course(String course_id, Individual i_id, Company com_cr, Education edu_id, String course_name,
-			Timestamp s_date, Timestamp e_date, String course_addby, String course_institute_name,
+			Date s_date, Date e_date, String course_addby, String course_institute_name,
 			String course_attch) {
 		super();
 		this.course_id = course_id;
