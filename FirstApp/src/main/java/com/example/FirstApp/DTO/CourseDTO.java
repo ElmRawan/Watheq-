@@ -1,7 +1,6 @@
 package com.example.FirstApp.DTO;
 
 import java.util.Date;
-
 import com.example.FirstApp.model.Company;
 import com.example.FirstApp.model.Education;
 import com.example.FirstApp.model.Individual;
