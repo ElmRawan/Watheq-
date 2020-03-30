@@ -8,8 +8,6 @@ import lombok.Setter;
 public class EducationDTO extends WatheQ_UserDTO{
 
 	private String edu_id;
-
-
 	private String edu_institute_name;
 
 	
